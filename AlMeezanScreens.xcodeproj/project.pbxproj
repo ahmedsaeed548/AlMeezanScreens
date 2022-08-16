@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E006DB0828A3B99100F80144 /* BankValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E006DB0728A3B99100F80144 /* BankValidateViewController.swift */; };
+		E006DB0A28A508B100F80144 /* TransferFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = E006DB0928A508B100F80144 /* TransferFund.swift */; };
+		E00B71AF2899311200ADDAA2 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B71AE2899311200ADDAA2 /* Subscription.swift */; };
+		E00FD5F5289A99C80058BAD0 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FD5F4289A99C80058BAD0 /* TextInputView.swift */; };
+		E00FD5F7289BB7D50058BAD0 /* FundTransferDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FD5F6289BB7D50058BAD0 /* FundTransferDetailsVC.swift */; };
 		E01AAA8B289154C900CE776D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAA8A289154C900CE776D /* AppDelegate.swift */; };
 		E01AAA8D289154C900CE776D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAA8C289154C900CE776D /* SceneDelegate.swift */; };
 		E01AAA8F289154C900CE776D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAA8E289154C900CE776D /* ViewController.swift */; };
@@ -14,9 +19,31 @@
 		E01AAA95289154C900CE776D /* AlMeezanScreens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E01AAA93289154C900CE776D /* AlMeezanScreens.xcdatamodeld */; };
 		E01AAA97289154CF00CE776D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01AAA96289154CF00CE776D /* Assets.xcassets */; };
 		E01AAA9A289154CF00CE776D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01AAA98289154CF00CE776D /* LaunchScreen.storyboard */; };
+		E01AAAA428916F8300CE776D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAAA328916F8300CE776D /* Enums.swift */; };
+		E01AAAAC28916FB100CE776D /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = E01AAAA628916FB100CE776D /* CircularStd-Book.otf */; };
+		E01AAAAD28916FB200CE776D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E01AAAA728916FB100CE776D /* Roboto-Medium.ttf */; };
+		E01AAAAE28916FB200CE776D /* Circular Std Font.otf in Resources */ = {isa = PBXBuildFile; fileRef = E01AAAA828916FB100CE776D /* Circular Std Font.otf */; };
+		E01AAAAF28916FB200CE776D /* times_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E01AAAA928916FB100CE776D /* times_0.ttf */; };
+		E01AAAB028916FB200CE776D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E01AAAAA28916FB100CE776D /* Roboto-Regular.ttf */; };
+		E01AAAB128916FB200CE776D /* CircularStd-Bold_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E01AAAAB28916FB100CE776D /* CircularStd-Bold_1.ttf */; };
+		E01AAAB52892BBCD00CE776D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAAB42892BBCD00CE776D /* Extensions.swift */; };
+		E01AAAB72892BBEC00CE776D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAAB62892BBEC00CE776D /* HeaderView.swift */; };
+		E01AAABA2892C92F00CE776D /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01AAAB92892C92F00CE776D /* HeaderViewController.swift */; };
+		E0BD48F22899010300ED7D3F /* PaymentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD48F12899010300ED7D3F /* PaymentServices.swift */; };
+		E0C93D572893CBF600142019 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C93D562893CBF600142019 /* View.swift */; };
+		E0C93D5A28940E0100142019 /* BillPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C93D5928940E0100142019 /* BillPayment.swift */; };
+		E0C93D5C28940E5300142019 /* BillPaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C93D5B28940E5300142019 /* BillPaymentCell.swift */; };
+		E0CC0C5F289C04ED007A1BE8 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC0C5E289C04ED007A1BE8 /* HistoryCell.swift */; };
+		E0F85DAC28A660B100EFD9F5 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F85DAB28A660B100EFD9F5 /* ExampleViewController.swift */; };
+		E0F85DAE28A6930C00EFD9F5 /* ButtonPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F85DAD28A6930C00EFD9F5 /* ButtonPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E006DB0728A3B99100F80144 /* BankValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankValidateViewController.swift; sourceTree = "<group>"; };
+		E006DB0928A508B100F80144 /* TransferFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFund.swift; sourceTree = "<group>"; };
+		E00B71AE2899311200ADDAA2 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		E00FD5F4289A99C80058BAD0 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		E00FD5F6289BB7D50058BAD0 /* FundTransferDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTransferDetailsVC.swift; sourceTree = "<group>"; };
 		E01AAA87289154C900CE776D /* AlMeezanScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlMeezanScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01AAA8A289154C900CE776D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E01AAA8C289154C900CE776D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +53,23 @@
 		E01AAA96289154CF00CE776D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E01AAA99289154CF00CE776D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E01AAA9B289154CF00CE776D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01AAAA328916F8300CE776D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		E01AAAA628916FB100CE776D /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		E01AAAA728916FB100CE776D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E01AAAA828916FB100CE776D /* Circular Std Font.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circular Std Font.otf"; sourceTree = "<group>"; };
+		E01AAAA928916FB100CE776D /* times_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = times_0.ttf; sourceTree = "<group>"; };
+		E01AAAAA28916FB100CE776D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E01AAAAB28916FB100CE776D /* CircularStd-Bold_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold_1.ttf"; sourceTree = "<group>"; };
+		E01AAAB42892BBCD00CE776D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E01AAAB62892BBEC00CE776D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E01AAAB92892C92F00CE776D /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		E0BD48F12899010300ED7D3F /* PaymentServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentServices.swift; sourceTree = "<group>"; };
+		E0C93D562893CBF600142019 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E0C93D5928940E0100142019 /* BillPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPayment.swift; sourceTree = "<group>"; };
+		E0C93D5B28940E5300142019 /* BillPaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentCell.swift; sourceTree = "<group>"; };
+		E0CC0C5E289C04ED007A1BE8 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		E0F85DAB28A660B100EFD9F5 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		E0F85DAD28A6930C00EFD9F5 /* ButtonPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +102,70 @@
 		E01AAA89289154C900CE776D /* AlMeezanScreens */ = {
 			isa = PBXGroup;
 			children = (
+				E0BD48EE2897CCFF00ED7D3F /* Cells */,
+				E0C93D5828940DDB00142019 /* View Controllers */,
+				E01AAAB82892BBFD00CE776D /* Utilities */,
 				E01AAA8A289154C900CE776D /* AppDelegate.swift */,
 				E01AAA8C289154C900CE776D /* SceneDelegate.swift */,
-				E01AAA8E289154C900CE776D /* ViewController.swift */,
 				E01AAA90289154C900CE776D /* Main.storyboard */,
+				E01AAAA528916FB100CE776D /* fonts */,
 				E01AAA96289154CF00CE776D /* Assets.xcassets */,
 				E01AAA98289154CF00CE776D /* LaunchScreen.storyboard */,
 				E01AAA9B289154CF00CE776D /* Info.plist */,
 				E01AAA93289154C900CE776D /* AlMeezanScreens.xcdatamodeld */,
 			);
 			path = AlMeezanScreens;
+			sourceTree = "<group>";
+		};
+		E01AAAA528916FB100CE776D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E01AAAA628916FB100CE776D /* CircularStd-Book.otf */,
+				E01AAAA728916FB100CE776D /* Roboto-Medium.ttf */,
+				E01AAAA828916FB100CE776D /* Circular Std Font.otf */,
+				E01AAAA928916FB100CE776D /* times_0.ttf */,
+				E01AAAAA28916FB100CE776D /* Roboto-Regular.ttf */,
+				E01AAAAB28916FB100CE776D /* CircularStd-Bold_1.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		E01AAAB82892BBFD00CE776D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E01AAAB62892BBEC00CE776D /* HeaderView.swift */,
+				E0C93D562893CBF600142019 /* View.swift */,
+				E01AAAB42892BBCD00CE776D /* Extensions.swift */,
+				E01AAAA328916F8300CE776D /* Enums.swift */,
+				E00FD5F4289A99C80058BAD0 /* TextInputView.swift */,
+				E0F85DAD28A6930C00EFD9F5 /* ButtonPickerView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E0BD48EE2897CCFF00ED7D3F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0C93D5B28940E5300142019 /* BillPaymentCell.swift */,
+				E0CC0C5E289C04ED007A1BE8 /* HistoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E0C93D5828940DDB00142019 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E01AAAB92892C92F00CE776D /* HeaderViewController.swift */,
+				E01AAA8E289154C900CE776D /* ViewController.swift */,
+				E0C93D5928940E0100142019 /* BillPayment.swift */,
+				E0BD48F12899010300ED7D3F /* PaymentServices.swift */,
+				E00B71AE2899311200ADDAA2 /* Subscription.swift */,
+				E00FD5F6289BB7D50058BAD0 /* FundTransferDetailsVC.swift */,
+				E006DB0728A3B99100F80144 /* BankValidateViewController.swift */,
+				E006DB0928A508B100F80144 /* TransferFund.swift */,
+				E0F85DAB28A660B100EFD9F5 /* ExampleViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +226,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01AAAAD28916FB200CE776D /* Roboto-Medium.ttf in Resources */,
 				E01AAA9A289154CF00CE776D /* LaunchScreen.storyboard in Resources */,
+				E01AAAB028916FB200CE776D /* Roboto-Regular.ttf in Resources */,
+				E01AAAB128916FB200CE776D /* CircularStd-Bold_1.ttf in Resources */,
+				E01AAAAF28916FB200CE776D /* times_0.ttf in Resources */,
 				E01AAA97289154CF00CE776D /* Assets.xcassets in Resources */,
 				E01AAA92289154C900CE776D /* Main.storyboard in Resources */,
+				E01AAAAC28916FB100CE776D /* CircularStd-Book.otf in Resources */,
+				E01AAAAE28916FB200CE776D /* Circular Std Font.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +246,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01AAA95289154C900CE776D /* AlMeezanScreens.xcdatamodeld in Sources */,
+				E01AAAB52892BBCD00CE776D /* Extensions.swift in Sources */,
+				E00FD5F5289A99C80058BAD0 /* TextInputView.swift in Sources */,
+				E0BD48F22899010300ED7D3F /* PaymentServices.swift in Sources */,
+				E0C93D572893CBF600142019 /* View.swift in Sources */,
+				E0F85DAC28A660B100EFD9F5 /* ExampleViewController.swift in Sources */,
 				E01AAA8F289154C900CE776D /* ViewController.swift in Sources */,
+				E01AAAA428916F8300CE776D /* Enums.swift in Sources */,
+				E006DB0A28A508B100F80144 /* TransferFund.swift in Sources */,
 				E01AAA8B289154C900CE776D /* AppDelegate.swift in Sources */,
+				E01AAABA2892C92F00CE776D /* HeaderViewController.swift in Sources */,
 				E01AAA8D289154C900CE776D /* SceneDelegate.swift in Sources */,
+				E0C93D5A28940E0100142019 /* BillPayment.swift in Sources */,
+				E00B71AF2899311200ADDAA2 /* Subscription.swift in Sources */,
+				E0F85DAE28A6930C00EFD9F5 /* ButtonPickerView.swift in Sources */,
+				E00FD5F7289BB7D50058BAD0 /* FundTransferDetailsVC.swift in Sources */,
+				E0C93D5C28940E5300142019 /* BillPaymentCell.swift in Sources */,
+				E0CC0C5F289C04ED007A1BE8 /* HistoryCell.swift in Sources */,
+				E006DB0828A3B99100F80144 /* BankValidateViewController.swift in Sources */,
+				E01AAAB72892BBEC00CE776D /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

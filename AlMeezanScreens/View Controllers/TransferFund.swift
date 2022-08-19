@@ -355,6 +355,7 @@ class TransferFundViewController: UIViewController {
         agreementView.addSubview(checkBoxBtn)
         agreementView.addSubview(agreementLbl)
         
+        
         checkBoxBtn.centerYAnchor.constraint(equalTo: agreementView.centerYAnchor, constant: 0).isActive = true
         checkBoxBtn.leadingAnchor.constraint(equalTo: agreementView.leadingAnchor, constant: 20).isActive = true
         

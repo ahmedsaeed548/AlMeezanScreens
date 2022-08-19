@@ -49,8 +49,6 @@ class AddBillPayeeeViewController: UIViewController {
     private let stackView: UIStackView = {
         let view = UIStackView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
-        view.layer.cornerRadius = 10
         view.distribution = .fillEqually
         view.alignment = .fill
         view.axis = .vertical
@@ -60,6 +58,23 @@ class AddBillPayeeeViewController: UIViewController {
         view.frame = view.bounds
         return view
     }()
+    private let scrollView: UIScrollView = {
+        let scrollview = UIScrollView()
+        scrollview.translatesAutoresizingMaskIntoConstraints = false
+        return scrollview
+    }()
+    
+    private var uiview: UIView = {
+        var view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = true
+        view.backgroundColor = .green
+        return view
+    }()
+    
+    var organizationCompany: TextInputView!
+    var mobileNumber: TextInputView!
+    var orgranizationTxt: String = ""
+    var mobileNumberTxt: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +82,8 @@ class AddBillPayeeeViewController: UIViewController {
         view.addSubview(headerView)
         view.addSubview(containerView)
         view.addSubview(buttonView)
+        containerView.addSubview(scrollView)
+        scrollView.addSubview(stackView)
         buttonView.addSubview(addBeneficiaryBtn)
         setupContraints()
     }
@@ -91,6 +108,42 @@ class AddBillPayeeeViewController: UIViewController {
         addBeneficiaryBtn.centerXAnchor.constraint(equalTo: buttonView.centerXAnchor).isActive = true
         addBeneficiaryBtn.widthAnchor.constraint(equalToConstant: 270).isActive = true
         addBeneficiaryBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        scrollView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+        scrollView.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
+        scrollView.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -2).isActive = true
+      
+        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 30).isActive = true
+        stackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20).isActive = true
+        
+        organizationCompany = TextInputView(heading: "Organization Company", placeholder: "Mobilink-PostPaid", isPasswordEnable: false) { [weak self] (enteredText) in
+            guard let self = self else {return}
+            self.orgranizationTxt = enteredText
+        }
+        UserDefaults.standard.set(orgranizationTxt, forKey: "Amount")
+        organizationCompany.txtField.keyboardType = .asciiCapableNumberPad
+        organizationCompany.setData(text: orgranizationTxt)
+        organizationCompany.translatesAutoresizingMaskIntoConstraints = false
+        organizationCompany.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        organizationCompany.containerView.backgroundColor = .gray2
+        stackView.addArrangedSubview(organizationCompany)
+        
+        mobileNumber = TextInputView(heading: "Mobile Number", placeholder: "Enter mobile number", isPasswordEnable: false) { [weak self] (enteredText) in
+            guard let self = self else {return}
+            self.mobileNumberTxt = enteredText
+        }
+        UserDefaults.standard.set(mobileNumberTxt, forKey: "Amount")
+        mobileNumber.txtField.keyboardType = .asciiCapableNumberPad
+        mobileNumber.setData(text: mobileNumberTxt)
+        mobileNumber.translatesAutoresizingMaskIntoConstraints = false
+        mobileNumber.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        mobileNumber.containerView.backgroundColor = .gray2
+        stackView.addArrangedSubview(mobileNumber)
+        
     }
 
 }

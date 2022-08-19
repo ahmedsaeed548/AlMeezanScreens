@@ -6,7 +6,7 @@ enum PageToShow {
     case history
 }
 
-class TestBillPayment: UIViewController {
+class AddPayeeController: UIViewController {
     
     private let headerView: UIView = {
         let view = UIView()
@@ -288,7 +288,7 @@ class TestBillPayment: UIViewController {
   
 }
 
-extension TestBillPayment:  UITableViewDelegate, UITableViewDataSource {
+extension AddPayeeController:  UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

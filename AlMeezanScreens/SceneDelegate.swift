@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       
         window?.windowScene = windowScene
         window?.overrideUserInterfaceStyle = .light
-        window?.rootViewController = TestBillPayment()
+        window?.rootViewController = AddBillPayeeeViewController()
         window?.makeKeyAndVisible()
         
     }

@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum Switch: Int {
+    case fundTrasnfer = 1
+    case billPayment = 2
+}
+
 class SubscriptionViewController: UIViewController {
     
     private (set) lazy var headerView: HeaderView = { [unowned self] in
@@ -15,7 +20,7 @@ class SubscriptionViewController: UIViewController {
         }, nextAction: {
             print("next")
         }, previousAction: {
-            self.navigationController?.popViewController(animated: true)
+            print("previous button is tapped")
         })
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -82,6 +87,7 @@ class SubscriptionViewController: UIViewController {
         btn.clipsToBounds = true
         btn.setTitle("SAVE", for: .normal)
         btn.tintColor = .white
+        btn.addTarget(self, action: #selector(transitionToPaymentVC), for: .touchUpInside)
         btn.backgroundColor = UIColor.purple
         btn.layer.cornerRadius = 20
         return btn
@@ -93,6 +99,7 @@ class SubscriptionViewController: UIViewController {
         switchView.onImage = UIImage(named: "switchOn")
         switchView.offImage = UIImage(named: "switchOff")
         switchView.onTintColor = UIColor.purple
+        switchView.tag = 1
         switchView.addTarget(self, action: #selector(switchStateDidChange), for: .valueChanged)
         switchView.translatesAutoresizingMaskIntoConstraints = false
         return switchView
@@ -104,6 +111,7 @@ class SubscriptionViewController: UIViewController {
         switchView.onImage = UIImage(named: "switchOn")
         switchView.offImage = UIImage(named: "switchOff")
         switchView.onTintColor = UIColor.purple
+        switchView.tag = 2
         switchView.addTarget(self, action: #selector(switchStateDidChange), for: .valueChanged)
         switchView.translatesAutoresizingMaskIntoConstraints = false
         return switchView
@@ -198,7 +206,12 @@ class SubscriptionViewController: UIViewController {
     }
     
     @objc func switchStateDidChange(_ sender: UISwitch) {
-        print( sender.isOn ? "Switch is ON": "Switch is Off" )
+        
+        if sender.tag == Switch.fundTrasnfer.rawValue {
+            print( sender.isOn ? "Fund Transfer Switch is ON": "Fund Transfer Switch is Off" )
+        } else {
+            print( sender.isOn ? "Bill Payment Switch is ON": "Bill Payment Fund Transfer Switch is Off" )
+        }
     }
     
     @objc func checkBoxStateDidChange(_ sender: UIButton) {
@@ -207,6 +220,11 @@ class SubscriptionViewController: UIViewController {
     
     @objc func termAndCondition(sender: UITapGestureRecognizer) {
         print("tapped.")
+    }
+    
+    @objc func transitionToPaymentVC() {
+        self.modalPresentationStyle = .custom
+        self.dismiss(animated: true)
     }
     
     private func setupConstraint() {

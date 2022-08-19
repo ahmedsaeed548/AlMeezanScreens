@@ -82,6 +82,7 @@ extension UIColor {
     static let btnGray = UIColor().hexStringToUIColor(hex: "#B9BBC6")
     static let customGray = UIColor().hexStringToUIColor(hex: "#F8F8F8")
     static let lightPurple = UIColor().hexStringToUIColor(hex: "#FBE8FF")
+    static let offwhite = UIColor().hexStringToUIColor(hex: "#FFFFFFB3")
     
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

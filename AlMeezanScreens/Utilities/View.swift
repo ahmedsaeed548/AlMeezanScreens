@@ -172,11 +172,6 @@ class PaymentServiceView: UIView {
     
     private func setupConstraints() {
         
-        //        self.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        //        self.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        self.heightAnchor.constraint(equalToConstant: 150).isActive = true
-        self.widthAnchor.constraint(equalToConstant: 320).isActive = true
-        
         self.views.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         self.views.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         self.views.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
@@ -184,19 +179,19 @@ class PaymentServiceView: UIView {
         
         self.image.centerYAnchor.constraint(equalTo: self.views.centerYAnchor).isActive = true
         self.image.leadingAnchor.constraint(equalTo: self.views.leadingAnchor, constant: 15).isActive = true
-        self.image.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        self.image.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        self.image.widthAnchor.constraint(equalTo: self.views.widthAnchor, multiplier: 0.2).isActive = true
+        self.image.heightAnchor.constraint(equalTo: self.views.heightAnchor, multiplier: 0.2).isActive = true
         
         self.titleLbl.centerYAnchor.constraint(equalTo: self.views.centerYAnchor, constant: -35).isActive = true
-        self.titleLbl.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: 15).isActive = true
+        self.titleLbl.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: 5).isActive = true
         
         self.subLbl.topAnchor.constraint(equalTo: titleLbl.bottomAnchor, constant: 5).isActive = true
-        self.subLbl.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: 15).isActive = true
+        self.subLbl.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: 5).isActive = true
         self.subLbl.trailingAnchor.constraint(equalTo: btnImage.leadingAnchor, constant: -15).isActive = true
         
-        btnImage.topAnchor.constraint(equalTo: views.topAnchor, constant: 55).isActive = true
-        btnImage.rightAnchor.constraint(equalTo: views.rightAnchor, constant: -10).isActive = true
-        btnImage.heightAnchor.constraint(equalToConstant: 10).isActive = true
+        btnImage.centerYAnchor.constraint(equalTo: views.centerYAnchor).isActive = true
+        btnImage.trailingAnchor.constraint(equalTo: views.trailingAnchor, constant: -10).isActive = true
+        btnImage.heightAnchor.constraint(equalTo: views.heightAnchor, multiplier: 0.06).isActive = true
         
     }
     
@@ -603,8 +598,6 @@ class NewPaymentServiceView: UIView {
     
     private func setupConstraints() {
         
-        
-        
         self.views.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         self.views.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         self.views.heightAnchor.constraint(equalToConstant: 150).isActive = true
@@ -625,8 +618,6 @@ class NewPaymentServiceView: UIView {
         btnImage.topAnchor.constraint(equalTo: views.topAnchor, constant: 55).isActive = true
         btnImage.rightAnchor.constraint(equalTo: views.rightAnchor, constant: -10).isActive = true
         btnImage.heightAnchor.constraint(equalToConstant: 10).isActive = true
-        
-        
         
     }
     

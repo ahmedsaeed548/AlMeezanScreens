@@ -26,6 +26,9 @@ enum IconName {
     static let fundImage = "fundImage"
     static let subImage = "subImages"
     static let greenDot = "Eclipse"
+    static let money = "money"
+    static let accountarrow = "accountarrow"
+    static let accountBox = "account-box-outline"
 }
 
 enum Headings {

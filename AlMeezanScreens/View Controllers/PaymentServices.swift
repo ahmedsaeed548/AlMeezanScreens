@@ -67,11 +67,15 @@ class PaymentServicesViewController: UIViewController {
     }
     
     @objc func fundTranferTapped(sender: UITapGestureRecognizer) {
-        print("FundTransfer Tapped.")
+     print("fund Transfer is tapped")
     }
     
     @objc func subscribeTapped(sender: UITapGestureRecognizer) {
         print("Subscribe Tapped.")
+        let vc = SubscriptionViewController()
+        let navVc = UINavigationController(rootViewController: vc)
+        navVc.modalPresentationStyle = .fullScreen
+        present(navVc, animated: true)
     }
     
     @objc func billPaymentTapped(sender: UITapGestureRecognizer) {
@@ -86,16 +90,24 @@ class PaymentServicesViewController: UIViewController {
         headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         headerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
+        subscriptionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2).isActive = true
+        subscriptionView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
+        
         subscriptionView.trailingAnchor.constraint(equalTo: fundTransferView.trailingAnchor, constant: 0).isActive = true
         subscriptionView.leadingAnchor.constraint(equalTo: fundTransferView.leadingAnchor, constant: 0).isActive = true
         subscriptionView.bottomAnchor.constraint(equalTo: fundTransferView.topAnchor, constant: 15).isActive = true
         
         fundTransferView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        fundTransferView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+        fundTransferView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 30).isActive = true
+        fundTransferView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2).isActive = true
+        fundTransferView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
         
         billPaymentView.leadingAnchor.constraint(equalTo: fundTransferView.leadingAnchor, constant: 0).isActive = true
         billPaymentView.trailingAnchor.constraint(equalTo: fundTransferView.trailingAnchor).isActive = true
         billPaymentView.topAnchor.constraint(equalTo: fundTransferView.bottomAnchor, constant: -20).isActive = true
+        
+        billPaymentView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2).isActive = true
+        billPaymentView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
         
     }
     

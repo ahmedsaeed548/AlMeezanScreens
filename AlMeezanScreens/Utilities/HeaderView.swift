@@ -12,7 +12,8 @@ class HeaderView: UIView {
     
     private let headerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .brown
+        view.backgroundColor = .white
+        view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

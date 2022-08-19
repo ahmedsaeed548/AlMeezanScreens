@@ -11,6 +11,7 @@ struct AccountDetails {
     var accountName: String?
     var amount: Int?
 }
+
 class FundTransferDetailsVC: UIViewController {
     
     private let tableview: UITableView = {
@@ -22,7 +23,6 @@ class FundTransferDetailsVC: UIViewController {
         tableview.backgroundColor = UIColor.gray2
         return tableview
     }()
-    
     
     private let segmentController: UISegmentedControl = {
         let items = ["My Payees", "History"]

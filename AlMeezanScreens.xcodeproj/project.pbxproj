@@ -37,6 +37,8 @@
 		E0C93D5C28940E5300142019 /* BillPaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C93D5B28940E5300142019 /* BillPaymentCell.swift */; };
 		E0CC0C5F289C04ED007A1BE8 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC0C5E289C04ED007A1BE8 /* HistoryCell.swift */; };
 		E0F550C528AE7C2F003E05AD /* AddBillPayee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F550C428AE7C2F003E05AD /* AddBillPayee.swift */; };
+		E0F550C728AFAD43003E05AD /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F550C628AFAD43003E05AD /* TransactionDetails.swift */; };
+		E0F550C928AFAECB003E05AD /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F550C828AFAECB003E05AD /* TestingViewController.swift */; };
 		E0F85DAC28A660B100EFD9F5 /* AddPayeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F85DAB28A660B100EFD9F5 /* AddPayeeController.swift */; };
 		E0F85DAE28A6930C00EFD9F5 /* ButtonPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F85DAD28A6930C00EFD9F5 /* ButtonPickerView.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +76,8 @@
 		E0C93D5B28940E5300142019 /* BillPaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentCell.swift; sourceTree = "<group>"; };
 		E0CC0C5E289C04ED007A1BE8 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		E0F550C428AE7C2F003E05AD /* AddBillPayee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillPayee.swift; sourceTree = "<group>"; };
+		E0F550C628AFAD43003E05AD /* TransactionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
+		E0F550C828AFAECB003E05AD /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		E0F85DAB28A660B100EFD9F5 /* AddPayeeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPayeeController.swift; sourceTree = "<group>"; };
 		E0F85DAD28A6930C00EFD9F5 /* ButtonPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +177,8 @@
 				E069F4F928ABA74C00CE915E /* TransactionComplete.swift */,
 				E0F85DAB28A660B100EFD9F5 /* AddPayeeController.swift */,
 				E0F550C428AE7C2F003E05AD /* AddBillPayee.swift */,
+				E0F550C628AFAD43003E05AD /* TransactionDetails.swift */,
+				E0F550C828AFAECB003E05AD /* TestingViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 				E01AAAB52892BBCD00CE776D /* Extensions.swift in Sources */,
 				E00FD5F5289A99C80058BAD0 /* TextInputView.swift in Sources */,
 				E0BD48F22899010300ED7D3F /* PaymentServices.swift in Sources */,
+				E0F550C928AFAECB003E05AD /* TestingViewController.swift in Sources */,
+				E0F550C728AFAD43003E05AD /* TransactionDetails.swift in Sources */,
 				E0C93D572893CBF600142019 /* View.swift in Sources */,
 				E0F85DAC28A660B100EFD9F5 /* AddPayeeController.swift in Sources */,
 				E01AAA8F289154C900CE776D /* ViewController.swift in Sources */,

@@ -62,7 +62,7 @@ class HeaderView: UIView {
         super.init(frame: CGRect.zero)
         self.translatesAutoresizingMaskIntoConstraints = false
         self.midLbl.text = titleLbl
-        self.previousBtnAction = previousAction
+        self.previousBtnAction = closeAction
         self.nextBtnAction = nextAction
         self.addSubview(headerView)
         headerView.addSubview(topbarImage)

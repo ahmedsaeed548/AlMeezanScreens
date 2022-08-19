@@ -88,13 +88,12 @@ class HistoryCell: UITableViewCell {
         bankNameLbl.trailingAnchor.constraint(equalTo: accountDetailLbl.trailingAnchor).isActive = true
         
         amountPKRLbl.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -10).isActive = true
-        amountPKRLbl.leadingAnchor.constraint(equalTo: accountDetailLbl.trailingAnchor, constant: 20).isActive = true
-       // amountPKRLbl.trailingAnchor.constraint(equalTo: chevronImage.leadingAnchor, constant: 10).isActive = true
+        amountPKRLbl.trailingAnchor.constraint(equalTo: chevronImage.leadingAnchor, constant: -10).isActive = true
         
-        chevronImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 35).isActive = true
-        chevronImage.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
+        chevronImage.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 0).isActive = true
+        chevronImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         chevronImage.heightAnchor.constraint(equalToConstant: 12).isActive = true
-        
+
         
     }
     

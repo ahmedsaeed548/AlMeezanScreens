@@ -112,6 +112,9 @@
 		E01AAA89289154C900CE776D /* AlMeezanScreens */ = {
 			isa = PBXGroup;
 			children = (
+				E081A3BE28B362940088DA80 /* Subscription */,
+				E081A3BF28B3629E0088DA80 /* FundTransfer */,
+				E081A3C028B362AC0088DA80 /* BillPayment */,
 				E0BD48EE2897CCFF00ED7D3F /* Cells */,
 				E0C93D5828940DDB00142019 /* View Controllers */,
 				E01AAAB82892BBFD00CE776D /* Utilities */,
@@ -154,6 +157,32 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		E081A3BE28B362940088DA80 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				E00B71AE2899311200ADDAA2 /* Subscription.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		E081A3BF28B3629E0088DA80 /* FundTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				E00FD5F6289BB7D50058BAD0 /* FundTransferDetails.swift */,
+				E006DB0928A508B100F80144 /* TransferFund.swift */,
+			);
+			path = FundTransfer;
+			sourceTree = "<group>";
+		};
+		E081A3C028B362AC0088DA80 /* BillPayment */ = {
+			isa = PBXGroup;
+			children = (
+				E0C93D5928940E0100142019 /* BillPayment.swift */,
+				E0F550C428AE7C2F003E05AD /* AddBillPayee.swift */,
+			);
+			path = BillPayment;
+			sourceTree = "<group>";
+		};
 		E0BD48EE2897CCFF00ED7D3F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,15 +197,10 @@
 			children = (
 				E01AAAB92892C92F00CE776D /* HeaderViewController.swift */,
 				E01AAA8E289154C900CE776D /* ViewController.swift */,
-				E0C93D5928940E0100142019 /* BillPayment.swift */,
 				E0BD48F12899010300ED7D3F /* PaymentServices.swift */,
-				E00B71AE2899311200ADDAA2 /* Subscription.swift */,
-				E00FD5F6289BB7D50058BAD0 /* FundTransferDetails.swift */,
 				E006DB0728A3B99100F80144 /* BankValidate.swift */,
-				E006DB0928A508B100F80144 /* TransferFund.swift */,
 				E069F4F928ABA74C00CE915E /* TransactionComplete.swift */,
 				E0F85DAB28A660B100EFD9F5 /* AddPayeeController.swift */,
-				E0F550C428AE7C2F003E05AD /* AddBillPayee.swift */,
 				E0F550C628AFAD43003E05AD /* TransactionDetails.swift */,
 				E0F550C828AFAECB003E05AD /* TestingViewController.swift */,
 			);

@@ -179,6 +179,8 @@
 			children = (
 				E0C93D5928940E0100142019 /* BillPayment.swift */,
 				E0F550C428AE7C2F003E05AD /* AddBillPayee.swift */,
+				E0F85DAB28A660B100EFD9F5 /* AddPayeeController.swift */,
+				E0F550C628AFAD43003E05AD /* TransactionDetails.swift */,
 			);
 			path = BillPayment;
 			sourceTree = "<group>";
@@ -200,8 +202,6 @@
 				E0BD48F12899010300ED7D3F /* PaymentServices.swift */,
 				E006DB0728A3B99100F80144 /* BankValidate.swift */,
 				E069F4F928ABA74C00CE915E /* TransactionComplete.swift */,
-				E0F85DAB28A660B100EFD9F5 /* AddPayeeController.swift */,
-				E0F550C628AFAD43003E05AD /* TransactionDetails.swift */,
 				E0F550C828AFAECB003E05AD /* TestingViewController.swift */,
 			);
 			path = "View Controllers";

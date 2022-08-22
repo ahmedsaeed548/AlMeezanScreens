@@ -11,6 +11,13 @@ class TransactionDetailsBottomSheetVC: UIViewController {
     
     // MARK: Views
     
+    private var amountView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private var dateView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -26,13 +33,6 @@ class TransactionDetailsBottomSheetVC: UIViewController {
     }()
     
     private var fromAccountView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    private var amountView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -105,6 +105,60 @@ class TransactionDetailsBottomSheetVC: UIViewController {
         return label
     }()
     
+    public var fromLbl: UILabel = {
+        var label = UILabel()
+        label.text = "From"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.black
+        label.font = UIFont(name: AppFontName.robotoMedium, size: 11)
+        return label
+    }()
+    
+    public var portfolioLbl: UILabel = {
+        var label = UILabel()
+        label.text = "Portfolio ID 346 XXXX XX 09"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.black
+        label.font = UIFont(name: AppFontName.robotoRegular, size: 12)
+        return label
+    }()
+    
+    public var portfolioNumber: UILabel = {
+        var label = UILabel()
+        label.text = "0000XXXXXXXX"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .lightGray
+        label.font = UIFont(name: AppFontName.robotoRegular, size: 12)
+        return label
+    }()
+    
+    public var toLbl: UILabel = {
+        var label = UILabel()
+        label.text = "To"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.black
+        label.font = UIFont(name: AppFontName.robotoMedium, size: 11)
+        return label
+    }()
+    
+    public var accountNameLbl: UILabel = {
+        var label = UILabel()
+        label.text = "Mohammad Ahmed"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.black
+        label.font = UIFont(name: AppFontName.robotoRegular, size: 12)
+        return label
+    }()
+    
+    public var accountNoLbl: UILabel = {
+        var label = UILabel()
+        label.text = "0000XXXXXXXXXX"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .lightGray
+        label.font = UIFont(name: AppFontName.robotoRegular, size: 12)
+        return label
+    }()
+    
     
     public var descriptionTitleLbl: UILabel = {
         var label = UILabel()
@@ -168,6 +222,12 @@ class TransactionDetailsBottomSheetVC: UIViewController {
         fromAccountView.addSubview(greenDot)
         fromAccountView.addSubview(secondGreenDot)
         fromAccountView.addSubview(dashedView)
+        fromAccountView.addSubview(fromLbl)
+        fromAccountView.addSubview(portfolioLbl)
+        fromAccountView.addSubview(portfolioNumber)
+        fromAccountView.addSubview(toLbl)
+        fromAccountView.addSubview(accountNameLbl)
+        fromAccountView.addSubview(accountNoLbl)
         descriptionView.addSubview(descriptionTitleLbl)
         descriptionView.addSubview(descriptionLbl)
     }
@@ -203,7 +263,7 @@ class TransactionDetailsBottomSheetVC: UIViewController {
         
         descriptionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
         descriptionView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1).isActive = true
-        descriptionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25).isActive = true
+        descriptionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3).isActive = true
         
         amountTitleLbl.topAnchor.constraint(equalTo: amountView.topAnchor, constant: 10).isActive = true
         amountTitleLbl.leadingAnchor.constraint(equalTo: amountView.leadingAnchor, constant: 20).isActive = true
@@ -237,6 +297,23 @@ class TransactionDetailsBottomSheetVC: UIViewController {
         secondGreenDot.widthAnchor.constraint(equalToConstant: 10).isActive = true
         secondGreenDot.heightAnchor.constraint(equalToConstant: 10).isActive = true
 
+        fromLbl.topAnchor.constraint(equalTo: fromAccountView.topAnchor, constant: 5).isActive = true
+        fromLbl.leadingAnchor.constraint(equalTo: greenDot.trailingAnchor, constant: 10).isActive = true
+        
+        portfolioLbl.topAnchor.constraint(equalTo: fromLbl.bottomAnchor, constant: 5).isActive = true
+        portfolioLbl.leadingAnchor.constraint(equalTo: fromLbl.leadingAnchor).isActive = true
+        
+        portfolioNumber.topAnchor.constraint(equalTo: portfolioLbl.bottomAnchor, constant: 5).isActive = true
+        portfolioNumber.leadingAnchor.constraint(equalTo: portfolioLbl.leadingAnchor).isActive = true
+        
+        toLbl.topAnchor.constraint(equalTo: secondGreenDot.topAnchor).isActive = true
+        toLbl.leadingAnchor.constraint(equalTo: portfolioNumber.leadingAnchor).isActive = true
+        
+        accountNameLbl.topAnchor.constraint(equalTo: toLbl.bottomAnchor, constant: 5).isActive = true
+        accountNameLbl.leadingAnchor.constraint(equalTo: toLbl.leadingAnchor).isActive = true
+        
+        accountNoLbl.topAnchor.constraint(equalTo: accountNameLbl.bottomAnchor, constant: 5).isActive = true
+        accountNoLbl.leadingAnchor.constraint(equalTo: accountNameLbl.leadingAnchor).isActive = true
         
         descriptionTitleLbl.topAnchor.constraint(equalTo: descriptionView.topAnchor, constant: 0).isActive = true
         descriptionTitleLbl.leadingAnchor.constraint(equalTo: descriptionView.leadingAnchor, constant: 20).isActive = true
